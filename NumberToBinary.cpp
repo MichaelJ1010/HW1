@@ -4,8 +4,12 @@ using namespace std;
 
 int main(){
     int number;
+    do{
     cout << "Please write a positive integer " << endl;
     cin >> number;
+    }while(number <= 0);
+
+    cout << number << " in binary: ";
 
     while(number != 0){
         if((number % 2 )== 0){
