@@ -16,11 +16,17 @@ int main(){
         if((number % 2 )== 0){
             cout << "0";
             number /= 2;
-            countFours ++;
+            countFours++;
+            if((countFours % 4) == 0){
+                cout << " ";
+            }
         }else{
             cout << "1";
             number /= 2;
             countFours++;
+            if((countFours % 4) == 0){
+                cout << " ";
+            }
         }
     }
     while((countFours % 4) != 0){
