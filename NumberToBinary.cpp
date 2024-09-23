@@ -4,11 +4,11 @@ using namespace std;
 
 int main(){
     int number;
-    int countFours;
+    int countFours = 0;
     do{
     cout << "Please write a positive integer " << endl;
     cin >> number;
-    }while(number <= 0);
+    }while(number < 0);
 
     cout << number << " in binary: ";
 
@@ -29,7 +29,7 @@ int main(){
             }
         }
     }
-    while((countFours % 4) != 0){
+    while((countFours % 4) != 0 || (countFours == 0)){
         cout << "0";
         countFours++;
     }
